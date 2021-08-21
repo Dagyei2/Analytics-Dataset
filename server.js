@@ -14,7 +14,7 @@ MongoClient.connect(uri, { useNewUrlParser: true})
         const db = client.db('sample_analytics');
         const customersCollection = db.collection('customers');
 
-        //Parser for POST DATA
+        //Middleware for parsing req body data
         app.use(express.json({ type: 'json' }));
 
 
