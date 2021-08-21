@@ -6,18 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": " nodemon server.js",
-    "start" : "node server.js"
+    "start": "node server.js"
   },
   "author": "Darwin Agyei",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongodb": "^4.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
   },
-
   "engines": {
     "node": "12.16.0"
   }
