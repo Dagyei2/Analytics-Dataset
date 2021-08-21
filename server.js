@@ -3,7 +3,8 @@ const express = require('express')
 
 const app = express()
 const PORT = process.env.PORT 
-const uri = "mongodb+srv://dagyei:bivqeh-dewryz-gajCi7@cluster0.xlvdw.mongodb.net/sample_analytics?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
+
 
 
 MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
