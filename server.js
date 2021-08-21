@@ -7,7 +7,7 @@ const uri = process.env.MONGODB_URI;
 
 
 
-MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+MongoClient.connect(uri, { useNewUrlParser: true})
     .then(client => {
         console.log('Connected to database');
         const db = client.db('sample_analytics');
