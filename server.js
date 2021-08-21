@@ -1,8 +1,8 @@
 const { MongoClient } = require("mongodb");
 const express = require('express')
 
-const app = express()
-const PORT = process.env.PORT 
+const app = express();
+const PORT = process.env.PORT ;
 const uri = process.env.MONGODB_URI;
 
 
