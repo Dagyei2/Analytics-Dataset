@@ -12,8 +12,3 @@ To interact with the analytics dataset, please install [Postman](https://www.pos
 | PATCH | https://analytics-dataset-api.herokuapp.com/customers/username |
 | DELETE | https://analytics-dataset-api.herokuapp.com/customers/username | 
 
-
-## Wrap Up Notes
-- Time length to complete the tasks: 7-8 hours 
-   - First time deploying to Heroku which took longer than expected due to an application error I encountered
-- If this were to be deployed in production, I would've created a UI to interact with the server
