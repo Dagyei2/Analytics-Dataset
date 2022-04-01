@@ -17,7 +17,7 @@ MongoClient.connect(uri, { useNewUrlParser: true})
         //Middleware for parsing req body data
         app.use(express.json({ type: 'json' }));
 
-
+        //GET method 
         app.get('/customers', (req, res) => {
             const getCustomers = customersCollection.find().toArray();
 
@@ -31,7 +31,7 @@ MongoClient.connect(uri, { useNewUrlParser: true})
         });
 
 
-
+        //Post method
         app.post('/customers', (req, res) => {
             const postCustomer = customersCollection.insertOne(req.body);
 
@@ -45,7 +45,7 @@ MongoClient.connect(uri, { useNewUrlParser: true})
         });
 
 
-
+        //Patch method  
         app.patch('/customers/:username', (req, res) => { 
             const filter = { username: req.params.username }
 
@@ -67,7 +67,7 @@ MongoClient.connect(uri, { useNewUrlParser: true})
         });
 
 
-
+    //Delete method
         app.delete('/customers/:username', (req, res) => {
 
             const query = { username: req.params.username }
